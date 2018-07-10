@@ -8,6 +8,8 @@ Archlinux desktop settings and things to remember.
   
 ## Global Menu
 - Install `appmenu-gtk-module`, `libdbusmenu-glib`, `libdbusmenu-gtk3`, `libdbusmenu-gtk2`
+- Go to Settings / Application style / Window Decorations / Buttons and add the global menu button.
+  - Alternative is to use a global menu panel.
 
 ## Firefox
 - Use `firefox-kde-opensuse-bin`
