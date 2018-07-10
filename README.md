@@ -6,7 +6,7 @@ Archlinux desktop settings and things to remember.
 
 - Fractional scaling introduces a lot of problems. Avoid it!
 - Optimal setup: Scale display to x2. Force font DPI to 154.
-  - Firefox scaling: set 'layout.css.devPixelsPerPx' to 1.7
+  - Firefox scaling: set `layout.css.devPixelsPerPx` to 1.7 in `about:config`
   - `export PLASMA_USE_QT_SCALING=1` in `.bash_profile` to enable scaling of plasma panels and desktop
 
 ## Global Menu
