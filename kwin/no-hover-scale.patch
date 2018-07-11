@@ -1,0 +1,19 @@
+diff -ura src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp
+--- src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-10 12:08:08.000000000 +0200
++++ src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-11 14:31:32.201001136 +0200
+@@ -362,6 +362,7 @@
+             m_motionManager.apply(w, data);
+             QRect rect = m_motionManager.transformedGeometry(w).toRect();
+ 
++            /*
+             if (m_activated && winData->highlight > 0.0) {
+                 // scale the window (interpolated by the highlight level) to at least 105% or to cover 1/16 of the screen size - yet keep it in screen bounds
+                 QRect area = effects->clientArea(FullScreenArea, w);
+@@ -404,6 +405,7 @@
+                     data += QPoint(tx, ty);
+                 }
+             }
++            */
+ 
+             if (m_motionManager.areWindowsMoving()) {
+                 mask &= ~PAINT_WINDOW_LANCZOS;

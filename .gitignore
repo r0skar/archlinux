@@ -1,0 +1,6 @@
+.directory
+kwin/**
+!kwin/PKGBUILD
+!kwin/no-hover-scale.patch
+!kwin/middleclick-close-window.patch
+!kwin/subtle-brightness-highlight.patch

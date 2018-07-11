@@ -1,0 +1,13 @@
+diff -ura src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp
+--- src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-10 12:08:08.000000000 +0200
++++ src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-11 13:25:53.671162341 +0200
+@@ -697,7 +697,8 @@
+         setActive(false);
+         break;
+     case WindowExitAction:
+-        setActive(false);
++        if (m_highlightedWindow)
++            closeWindow();
+         break;
+     case WindowToCurrentDesktopAction:
+         if (m_highlightedWindow)

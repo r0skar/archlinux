@@ -1,0 +1,12 @@
+diff -ura src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp
+--- src/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-10 12:08:08.000000000 +0200
++++ src.patched/kwin-5.13.3/effects/presentwindows/presentwindows.cpp	2018-07-11 14:31:54.044333570 +0200
+@@ -353,7 +353,7 @@
+         mask |= PAINT_WINDOW_LANCZOS;
+         // Apply opacity and brightness
+         data.multiplyOpacity(winData->opacity);
+-        data.multiplyBrightness(interpolate(0.40, 1.0, winData->highlight));
++        data.multiplyBrightness(interpolate(0.80, 1.0, winData->highlight));
+
+         if (m_motionManager.isManaging(w)) {
+             if (w->isDesktop()) {

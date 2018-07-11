@@ -35,3 +35,15 @@ Archlinux desktop settings and things to remember.
 
 - Service Menus
   - Service menus are defined in `/home/oskar/.local/share/kservices5/`
+
+## AUR
+
+- Use [yay](https://github.com/Jguer/yay) instead of pacaur.
+
+## KWIN
+
+- Use patched KWIN to enable middle-click close and disable hover effects in Present Window Effect:
+  - The custom PKGBUILD contains the key `groups=('patched')`, which makes sure that pacman ignores official updates for the modified packages.
+  - Edit `PKGBUILD`, `middleclick-close-window.patch` and `no-hover-scale.patch` and update KWIN versions.
+  - Generate KWIN using `makepkg --skippgpcheck`.
+  - Install patched KWIN with `sudo pacman -U kwin-VERSION.tar.xz`
