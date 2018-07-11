@@ -20,3 +20,13 @@ Archlinux desktop settings and things to remember.
 - Use `firefox-kde-opensuse-bin`
   - includes global menu
   - includes KDE file dialogs
+
+## Node JS
+
+- Global yarn packages are installed into `/home/oskar/.config/yarn/global/`, while the global executables are in `/home/oskar/.yarn/bin/`.
+
+## Theming
+
+- Breeze AlphaBlack: Disable the theming of windows:
+  - Comment out Line 200 `setTitlebarColors(newColor)` in `/home/oskar/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py`
+- Folder Icons: Replaced the default Breeze theme folders (`places`) with [Nix OS folders](https://www.opendesktop.org/p/1228310/)
