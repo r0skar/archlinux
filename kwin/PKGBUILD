@@ -2,8 +2,6 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
-
-groups=('patched')
 pkgname=kwin
 pkgver=5.13.3
 pkgrel=1
@@ -14,7 +12,7 @@ license=(LGPL)
 depends=(kscreenlocker xcb-util-cursor plasma-framework kcmutils breeze kinit qt5-sensors)
 makedepends=(extra-cmake-modules qt5-tools kdoctools)
 optdepends=('qt5-virtualkeyboard: virtual keyboard support for kwin-wayland')
-groups=(plasma)
+groups=(plasma patched)
 source=("https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz"{,.sig})
 sha256sums=('7f069710a2c85c362dc5d1bbe25f54b46fa6ff4cf287c8d1a46bd43cf3f3cbaa'
             'SKIP')

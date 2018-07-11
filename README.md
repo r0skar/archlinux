@@ -2,6 +2,11 @@
 
 Archlinux desktop settings and things to remember.
 
+## Pacman
+
+- Ignored groups: 'patched'
+  - To ignore a package, add `groups=('patched')` to the `PKGBUILD`
+
 ## HIDPI
 
 - Fractional scaling introduces a lot of problems. Avoid it!
@@ -29,7 +34,7 @@ Archlinux desktop settings and things to remember.
 
 - Breeze AlphaBlack: Disable the theming of windows:
   - Comment out Line 200 `setTitlebarColors(newColor)` in `/home/oskar/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py`
-- Folder Icons: Replaced the default Breeze theme folders (`places`) with [Nix OS folders](https://www.opendesktop.org/p/1228310/)
+- Folder Icons: Replaced the default Breeze theme folders (`/usr/share/icons/breeze/places`) with [Nix OS folders](https://www.opendesktop.org/p/1228310/)
 
 ## Dolphin
 
@@ -42,8 +47,4 @@ Archlinux desktop settings and things to remember.
 
 ## KWIN
 
-- Use patched KWIN to enable middle-click close and disable hover effects in Present Window Effect:
-  - The custom PKGBUILD contains the key `groups=('patched')`, which makes sure that pacman ignores official updates for the modified packages.
-  - Edit `PKGBUILD`, `middleclick-close-window.patch` and `no-hover-scale.patch` and update KWIN versions.
-  - Generate KWIN using `makepkg --skippgpcheck`.
-  - Install patched KWIN with `sudo pacman -U kwin-VERSION.tar.xz`
+- Use patched KWIN in `./kwin` to enable middle-click close and disable hover effects in Present Window Effect
