@@ -5,7 +5,7 @@ Archlinux desktop settings and things to remember.
 ## Pacman
 
 - Ignored groups: 'patched'
-  - To ignore a package, add `groups=('patched')` to the `PKGBUILD`
+  - To ignore a package, add `groups=('patched')` to the `PKGBUILD` or add the package name in `/etc/pacman.conf` like this: `IgnorePkg = kwin`
 
 ## HIDPI
 
