@@ -30,3 +30,8 @@ Archlinux desktop settings and things to remember.
 - Breeze AlphaBlack: Disable the theming of windows:
   - Comment out Line 200 `setTitlebarColors(newColor)` in `/home/oskar/.local/share/plasma/desktoptheme/breeze-alphablack/desktoptheme.py`
 - Folder Icons: Replaced the default Breeze theme folders (`places`) with [Nix OS folders](https://www.opendesktop.org/p/1228310/)
+
+## Dolphin
+
+- Service Menus
+  - Service menus are defined in `/home/oskar/.local/share/kservices5/`
