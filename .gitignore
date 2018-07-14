@@ -1,7 +1,5 @@
 .directory
-kwin/**
-!kwin/README.md
-!kwin/PKGBUILD
-!kwin/no-hover-scale.patch
-!kwin/middleclick-close-window.patch
-!kwin/subtle-brightness-highlight.patch
+pkg/**
+!pkg/README.md
+!pkg/PKGBUILD
+!pkg/*.patch
