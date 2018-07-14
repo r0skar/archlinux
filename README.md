@@ -53,3 +53,8 @@ Archlinux desktop settings and things to remember.
 
 - Stuff installed via pacman is usually in `/usr/share/plasma`
 - Stuff installed via the plasma UI is in `/home/oskar/.local/share/plasma/`
+
+## iPOD
+
+- Install `libgod` and `gvfs` as well as `gvfs-nfs gvfs-mtp gvfs-afc gvfs-smb`.
+- (Re)Build clementine
