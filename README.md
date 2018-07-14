@@ -48,3 +48,8 @@ Archlinux desktop settings and things to remember.
 ## KWIN
 
 - Use patched KWIN in `./kwin` to enable middle-click close and disable hover effects in Present Window Effect
+
+## Plasma Applets & Themes
+
+- Stuff installed via pacman is usually in `/usr/share/plasma`
+- Stuff installed via the plasma UI is in `/home/oskar/.local/share/plasma/`

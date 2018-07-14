@@ -23,9 +23,9 @@ validpgpkeys=('2D1D5B0588357787DE9EE225EC94D18F7F05997E'  # Jonathan Riddell
 
 prepare() {
   mkdir -p build
-  patch -p1 </__HDD/__persistent/dev/archlinux/kwin/middleclick-close-window.patch
-  patch -p1 </__HDD/__persistent/dev/archlinux/kwin/no-hover-scale.patch
-  patch -p1 </__HDD/__persistent/dev/archlinux/kwin/subtle-brightness-highlight.patch
+  patch -p1 </__HDD/__persistent/dev/archlinux/pkg/kwin/middleclick-close-window.patch
+  patch -p1 </__HDD/__persistent/dev/archlinux/pkg/kwin/no-hover-scale.patch
+  patch -p1 </__HDD/__persistent/dev/archlinux/pkg/kwin/subtle-brightness-highlight.patch
 }
 
 build() {
