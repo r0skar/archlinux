@@ -6,6 +6,7 @@ Archlinux desktop settings and things to remember.
 
 - Ignored groups: 'patched'
   - To ignore a package, add `groups=('patched')` to the `PKGBUILD` or add the package name in `/etc/pacman.conf` like this: `IgnorePkg = kwin`
+- Modify `/etc/makepkg.conf` and add `MAKEFLAGS="-j5"` to use all cores when compiling packages
 
 ## HIDPI
 
@@ -53,6 +54,8 @@ Archlinux desktop settings and things to remember.
 
 - Stuff installed via pacman is usually in `/usr/share/plasma`
 - Stuff installed via the plasma UI is in `/home/oskar/.local/share/plasma/`
+- Increase systemtray icon spacing in `/usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml` line 310.
+- Edit ~/.local/share/konsole/<name>.profile and add TerminalMargin=X to increase Konsole Padding.
 
 ## iPOD
 
